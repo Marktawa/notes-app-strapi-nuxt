@@ -6,6 +6,12 @@
     <h1>Notes App</h1>
     <h2>Notes List</h2>
     <ul>
-        <li v-for="note in notes.data">{{ note.title }}</li>
+        <li v-for="note in notes.data">
+            <h3>{{ note.title }}</h3>
+            <NuxtLink :to="`/notes/${note.documentId}`">
+                <button>View Note</button>
+            </NuxtLink>
+        </li>
     </ul>
+    <NuxtLink to="/">Back to Home</NuxtLink>
 </template>
