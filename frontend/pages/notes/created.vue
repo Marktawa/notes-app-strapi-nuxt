@@ -1,7 +1,7 @@
 <script setup>
     const route = useRoute()
     const isSuccess = route.query.success === '1'
-    const noteId = route.query.noteId
+    const noteId = route.query.id
 </script>
 
 <template>
@@ -25,7 +25,7 @@
         <h2>Note Creation Failed</h2>
         <p>There was an error creating your note. Please try again</p>
 
-        <NuxtLink :to="/notes/create">
+        <NuxtLink to="/notes/create">
             <button>Try Again</button>
         </NuxtLink>
 
