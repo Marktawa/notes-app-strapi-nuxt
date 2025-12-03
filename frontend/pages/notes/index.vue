@@ -13,5 +13,11 @@
             </NuxtLink>
         </li>
     </ul>
-    <NuxtLink to="/">Back to Home</NuxtLink>
+
+    <NuxtLink to="/notes/create">
+        <button>Create a New Note</button>
+    </NuxtLink>
+    <br />
+    <br />
+    <NuxtLink to="/">Back to Home</NuxtLink> 
 </template>
