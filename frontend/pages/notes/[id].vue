@@ -4,8 +4,14 @@
 </script>
 
 <template>
-    <h1>{{ note.data.title }}</h1>
+    <h1>Notes App</h1>
+    <h2>{{ note.data.title }}</h2>
     <p>{{ note.data.content }}</p>
+    <br>
+    <NuxtLink :to="`/notes/edit?id=${route.params.id}`">
+        <button>Edit Note</button>
+    </NuxtLink>
+    <br>
     <NuxtLink to="/notes">Back to Notes List</NuxtLink>
     <br/>
     <br/>
