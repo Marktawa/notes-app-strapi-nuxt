@@ -12,6 +12,10 @@
         <button>Edit Note</button>
     </NuxtLink>
     <br>
+    <NuxtLink :to="`/notes/delete?id=${route.params.id}`">
+        <button>Delete Note</button>
+    </NuxtLink>
+    <br>
     <NuxtLink to="/notes">Back to Notes List</NuxtLink>
     <br/>
     <br/>
